@@ -2,7 +2,7 @@
 clc;clear all;close all;
 warning off;
 %% Sequances
-[Header ,Seq] = fastaread('Rep.txt');
+[Header ,Seq] = fastaread('input_sequences.txt');
 %% Enzyme Database
 fid = fopen('rebase_e.txt','r');
 data = textscan(fid,'%s%s%f%f%f%f%f%f%f','headerlines',42,'delimiter','\t');
